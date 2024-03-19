@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1> Math Operations </h1>
+
+        Enter 1st number : <input type="number" id="no1"><br><br>
+        Enter 2nd number : <input type="number" id="no2"><br><br>
+
+        <input type="button" value="+" id="addition">
+        <input type="button" value="-" id="substraction">
+        <input type="button" value="*" id="multiplication"><br><br>
+
+        <input type="button" value="/" id="division">
+        <input type="button" value="%" id="module"><br><br>
+
+        Answer is : <input type="text" name="" id="result">
+    </div>
+
+    <script>
+        var no1= document.getElementById("no1");
+        var no2= document.getElementById("no2");
+        var result= document.getElementById("result"); 
+
+        document.getElementById("addition").addEventListener("click", function(){result.value = parseInt(no1.value) + parseInt(no2.value);
+        });
+
+        document.getElementById("substraction").addEventListener("click", function(){result.value = parseInt(no1.value) - parseInt(no2.value);
+        });
+
+        document.getElementById("multiplication").addEventListener("click", function(){result.value = parseInt(no1.value) * parseInt(no2.value);
+        });
+
+        document.getElementById("division").addEventListener("click", function(){result.value = parseInt(no1.value) / parseInt(no2.value);
+        });
+
+        document.getElementById("module").addEventListener("click", function(){result.value = parseInt(no1.value) % parseInt(no2.value);
+        });
+    </script>
+</body>
+</html>
